@@ -6,6 +6,10 @@
     --brown: #705D56;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0; 
     margin: 0;
@@ -15,11 +19,10 @@
 body {
     font-family: sans-serif;
     background-color: var(--white);
+    height: 200vh;
 }
 
-.header {
-    background-color: #444;
-}
+/* Everything nav */
 
 .header a img {
     display: flex;
@@ -64,8 +67,6 @@ body {
     box-shadow:inset 150px 0 0 0 var(--black);
 }
 
-
-
 .logo {
     height: 50px;
 }
@@ -77,6 +78,7 @@ body {
     max-width: 788px;
     padding: 20px;
     border-radius: 20px;
+
 }
 
 .container {
@@ -106,12 +108,89 @@ body {
     margin-bottom: 10px;
 }
 
-main {
-    width: 800px;
+.heading .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.heading .info-btn{
+    margin: 15px 5px 5px 5px;
+    text-align: center;
+    height: 47px;
+    border-radius: 10px;
+    border: 2px solid black;
     background-color: var(--blue);
 }
 
-details summary {
+.info-btn:hover {
+    background-color: var(--bluegreen);
+    transform: scale(1.05);
+}
+
+.info-btn:active {
+    transform: scale(0.97);
+}
+
+.heading .info-btn a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--black);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--blue);
+}
+
+/* FAQ */
+
+#faq-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.faq-container {
+    width: 500px;
+    background-color: var(--brown);
+    border-radius: 15px;
+}
+
+.faq {
+    max-width: 764px;
+}
+
+.faq-container .faq h3 {
+    text-align: center;
+    margin: 25px 25px 5px 25px;
     font-size: 1.25rem;
+}
+
+details {
+    display: flex;
+    justify-content: center;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+details:hover {
+    
+}
+
+details summary {
+    display: flex;
+    justify-content: center;
     cursor: pointer;
+    padding: 15px;
+    display: list-item;
+}
+
+details summary:hover {
+    background-color: white;
+}
+
+details p {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
 }
