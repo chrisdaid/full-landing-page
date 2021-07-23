@@ -54,14 +54,22 @@ body {
     width: 90px;
     height: 60px;
     z-index: 0;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    background-color: var(--brown);
+    background-color: rgba(112, 93, 86, 0.75); /* brown variable in rgba */
 }
 
-.top-btn-bg-hover {
-    background-color: var(--blue);
+@media only screen and (max-width: 600px) {
+    #top-btn {
+        width: 60px;
+        height: 45px;
+    }
+    #top-btn-bg {
+        width: 60px;
+        height: 45px;
+    }
 }
+
 
 /* Everything nav */
 
@@ -128,7 +136,7 @@ body {
     align-items: center;
     width: 100%;
     height: 550px;
-    background: url("assets/header.jpg") no-repeat;
+    background: url("assets/header.webp") no-repeat;
     background-size: cover;
 }
 
@@ -219,11 +227,14 @@ body {
     text-align: center;
     padding: 30px;
     color: var(--black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 1rem;
     margin: 30px;
@@ -246,12 +257,32 @@ body {
     color: var(--white);
 }
 
-/* mobile view cards  */
+/* Services Pictures */
 
-@media only screen and (max-width: 764px) {
-    .cards {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
+.card-pic-1 p, .card-pic-2 p, .card-pic-3 p {
+    visibility: hidden;
+}
+
+.card-pic-1 h3, .card-pic-2 h3, .card-pic-3 h3 {
+    visibility: hidden;
+}
+
+.card-pic-1 {
+    background: url(assets/repair.webp);
+    background-size: cover;
+
+}
+
+.card-pic-2 {
+    background: url(assets/upgrade.webp);
+    background-size: cover;
+
+}
+
+.card-pic-3 {
+    background: url(assets/network.webp);
+    background-size: cover;
+
 }
 
 /* FAQ */
