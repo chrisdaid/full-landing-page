@@ -4,6 +4,12 @@
     --bluegreen: #99E1D9;
     --blue: #70ABAF;
     --brown: #705D56;
+
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.75rem;
+    --h4: 1.35rem;
+    --normaltext: 1.15rem;
 }
 
 html {
@@ -17,9 +23,44 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: var(--white);
     height: 200vh;
+}
+
+/* Go to top fixed button  */
+
+#top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    padding: 20px;
+    width: 90px;
+    height: 60px;
+    background: url('assets/to-top.svg');
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+#top-btn-bg {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    padding: 20px;
+    width: 90px;
+    height: 60px;
+    z-index: 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--brown);
+}
+
+.top-btn-bg-hover {
+    background-color: var(--blue);
 }
 
 /* Everything nav */
@@ -44,7 +85,7 @@ body {
 }
 
 .navbar ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .nav-link {
@@ -89,21 +130,19 @@ body {
     height: 550px;
     background: url("assets/header.jpg") no-repeat;
     background-size: cover;
-    
-
 }
 
-.heading h1, .heading h2, .heading p, .heading input {
+.heading h1, .heading h4, .heading p, .heading input {
     text-align: center;
 }
 
 .heading h1 {
-    font-size: 3rem;
+    font-size: var(--h1);
     font-weight: bold;
 }
 
-.heading h2 {
-    font-size: 1.25rem;
+.heading h4 {
+    font-size: var(--h4);
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -135,11 +174,76 @@ body {
 
 .heading .info-btn a {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: var(--normaltext);
     color: var(--black);
     border-radius: 10px;
     padding: 10px;
     background-color: var(--blue);
+}
+
+/* Same Day Service Section  */
+
+.same-day-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--black);
+    padding: 20px;
+    color: var(--white);
+}
+
+.same-day h3 {
+    margin-bottom: 5px;
+}
+
+.same-day p {
+    line-height: 1.2rem;
+}
+
+.same-day a {
+    color: #937C8B;
+    transition: 0.2s ease;
+}
+
+.same-day a:hover {
+    color: #A18C9A;
+}
+
+.same-day {
+    max-width: 764px;
+}
+
+/* Services Section  */
+
+.services-container {
+    text-align: center;
+    padding: 30px;
+    color: var(--black);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    margin: 30px;
+}
+
+.card {
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 0.5rem;
+    background-color: var(--black);
+}
+
+.card h3 {
+    padding: 15px 15px 5px 15px;
+    color: var(--blue);
+}
+
+.card p {
+    padding: 0 15px 15px 15px;
+    color: var(--white);
 }
 
 /* FAQ */
@@ -163,13 +267,13 @@ body {
 .faq-container .faq h3 {
     text-align: center;
     margin: 25px 25px 5px 25px;
-    font-size: 1.25rem;
+    font-size: var(--h3);
 }
 
 details {
     display: flex;
     justify-content: center;
-    font-size: 1.15rem;
+    font-size: var(--normaltext);
     text-align: center;
 }
 
@@ -193,4 +297,25 @@ details p {
     padding: 10px;
     text-align: center;
     font-size: 1rem;
+}
+
+/* Miscellaneous */
+
+/* divider  <hr> design */
+
+.hr-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 0 0;
+}
+
+hr {
+    min-width: 75%;
+    height: 5px;
+    background-color: var(--bluegreen);
+    border-radius: 10px;
+    border: none;
 }

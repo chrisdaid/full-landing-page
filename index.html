@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CortX IT Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <div class="header">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CortX IT Services</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
             <nav class="navbar">
                 <!-- logo -->
                 <div>
@@ -18,31 +20,76 @@
                     </a>
                 </div>
                 <!-- nav items -->
-                <div class="nav">
+                <div class="nav" id="nav">
                     <ul>
-                        <li><a class="nav-link" href="#">Services</a></li>
-                        <li><a class="nav-link" href="#">Testamonials</a></li>
+                        <li><a class="nav-link" href="#services">Services</a></li>
+                        <li><a class="nav-link" href="#faq-section">FAQ</a></li>
                         <li><a class="nav-link" href="#">About</a></li>
                         <li><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-    </div>
-
+        </div>
+        <!-- To Top Button  -->
+        <a href="#nav" id="top-btn"></a>
+        <a href="#" id="top-btn-bg"></a>
+        <!-- Heading with Background Image -->
         <div class="container">
-        
-
             <div class="heading">
                 <h1>CortX IT Services</h1>
-                <h2>Proudly Serving the Washington, DC Region</h2>
+                <h4>Proudly Serving the Washington, DC Region</h4>
                 <p>Technology just not co-operating today? Don't worry. We got your back. Come in or send in your machines and we will fix it right up! We understand how precious time is, and having something fail on you isn't cool, so we will do our best to resolve your issues.</p>
                 <div class="input-container">
                     <button class="info-btn"><a href="#faq-section">More Info</a></button>
                 </div>
             </div>
         </div>
-    </section>
-        
+        <!-- Info section  -->
+        <section id="same-day-service">
+            <div class="same-day-container">
+                <div class="same-day">
+                    <h3>Same Day Service</h3>
+                    <p>We respond to out-calls! Our skilled technicians can drive to your location of choice and resolve your issues on the spot. This is a free service for customers that are located within 10 miles of our office!</p>
+                    <p>Call us at <a href="tel:+17030000000">(703)000-0000</a> or email us at <a href="mailto:appointments@CortX.com">appointments@CortX.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- divider  -->
+        <div class="hr-container">
+            <hr>
+        </div>
+
+        <!-- Services  -->
+        <section id="services">
+            <div class="services-container">
+                <div class="services">
+                    <!-- Card Title  -->
+                    <h2>Services</h2>
+                    <!-- Card Container  -->
+                    <div class="cards">
+                        <!-- Card #1 -->
+                        <div class="card">
+                            <h3>Computer Repair</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reprehenderit iusto repellendus facere laudantium doloribus quo veritatis exercitationem atque excepturi eaque quis ipsam, facilis harum explicabo omnis dolorum iste suscipit?</p>
+                        </div>
+                        <!-- Card #2 -->
+                        <div class="card">
+                            <h3>Computer Upgrade</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reprehenderit iusto repellendus facere laudantium doloribus quo veritatis exercitationem atque excepturi eaque quis ipsam, facilis harum explicabo omnis dolorum iste suscipit?</p>
+                        </div>
+                        <!-- Card #3 -->
+                        <div class="card">
+                            <h3>Server Installation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reprehenderit iusto repellendus facere laudantium doloribus quo veritatis exercitationem atque excepturi eaque quis ipsam, facilis harum explicabo omnis dolorum iste suscipit?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FAQ  -->
         <section id="faq-section">
             <div class="faq-container">    
                 <div class="faq">
@@ -60,7 +107,6 @@
                         <p>
                             Of course! We wouldn't be in business if we just sold hardware, haha. Don't worry,
                             if you have the parts ready, then we can build it! 
-                            
                         </p>
                     </details>
                     <details>
@@ -79,6 +125,9 @@
                 </div>
             </div>
         </section>
-    
-</body>
+
+
+
+        <script src="main.js"></script>
+    </body>
 </html>
