@@ -246,6 +246,14 @@ body {
     color: var(--white);
 }
 
+/* mobile view cards  */
+
+@media only screen and (max-width: 764px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 /* FAQ */
 
 #faq-section {
