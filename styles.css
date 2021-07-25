@@ -128,7 +128,7 @@ body {
     max-width: 788px;
     padding: 20px;
     border-radius: 20px;
-
+    margin: 30px;
 }
 
 .container {
@@ -139,6 +139,7 @@ body {
     height: 550px;
     background: url("assets/header.webp") no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .heading h1, .heading h4, .heading p, .heading input {
@@ -254,7 +255,7 @@ body {
     transition: 0.3s;
 }
 
-#services .card-pic-1:hover {
+#services .card-pic-1:hover, .card-pic-2:hover, .card-pic-3:hover {
     transform: scale(1.07);
 }
 
@@ -400,7 +401,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
     height: 50px;
 }
 
