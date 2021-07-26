@@ -302,15 +302,15 @@ body {
 #faq-section {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .faq-container {
-    max-width: 1500px;
+    width: 764px;
     background-color: #4B3E3A;
     border-radius: 15px;
     color: var(--white);
-    margin: 0 30px;
+    margin: 0 50px;
 }
 
 .faq {
@@ -348,7 +348,7 @@ details summary:hover {
 }
 
 details p {
-    padding: 10px;
+    padding: 10px 25px 10px 25px;
     text-align: center;
     font-size: 1rem;
 }
