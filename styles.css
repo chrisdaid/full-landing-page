@@ -343,6 +343,10 @@ details summary:hover {
     background-color: var(--brown);
 }
 
+.summary-active-bg {
+    background-color: var(--brown);
+}
+
 details p {
     padding: 10px;
     text-align: center;
