@@ -43,7 +43,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    z-index: 1;
+    z-index: 9999;
     border-radius: 8px;
 }
 
@@ -54,7 +54,7 @@ body {
     padding: 20px;
     width: 90px;
     height: 60px;
-    z-index: 0;
+    z-index: 999;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background-color: rgba(112, 93, 86, 0.75); /* brown variable in rgba */
@@ -296,6 +296,183 @@ body {
     background-size: cover;
 
 }
+
+/* About Us Section */
+
+#about-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+.about-container {
+    width: 764px;
+    margin: 0 50px;
+    background: url(assets/about.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.absolute {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 340px;
+    max-width: 564px;
+    padding: 20px;
+}
+
+.about {
+    max-width: 764px;
+    height: 500px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h3 {
+    color: var(--white);
+    font-size: var(--h3);
+    transform-origin: center;
+    transform: rotate(42.5deg);
+    /* background-color: pink; */
+    margin-left: 5%;
+    margin-bottom: 47%;
+}
+
+/* About section mobile view  */
+
+@media only screen and (max-width: 865px) {
+    .about h3 {
+        margin-left: 1.5%;
+        margin-bottom: 50%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .about h3 {
+        margin-left: 3.5%;
+        margin-bottom: 53%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .about h3 {
+        margin-left: 4.5%;
+        margin-bottom: 55%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .about h3 {
+        margin-left: 5%;
+        margin-bottom: 57%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .about h3 {
+        margin-left: 6%;
+        margin-bottom: 60%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .about h3 {
+        margin-left: 7%;
+        margin-bottom: 62%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .about h3 {
+        margin-left: 7%;
+        margin-bottom: 64%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about h3 {
+        margin-left: 8%;
+        margin-bottom: 68%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about h3 {
+        margin-left: 11%;
+        margin-bottom: 72%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about h3 {
+        margin-left: 15%;
+        margin-bottom: 75%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about h3 {
+        margin-left: 9%;
+        margin-bottom: 57%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .about h3 {
+        margin-left: 13%;
+        margin-bottom: 65%;
+    }
+
+    .absolute {
+        height: 13.8em;
+        overflow: hidden;
+    }
+
+    .absolute::after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 1.2em;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) 50%);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .about h3 {
+        text-align:center;
+        margin-right: 28%;
+        margin-bottom: 75%;
+    }
+
+    .absolute {
+        height: 12em;
+        overflow: hidden;
+    }
+    
+    .absolute::after {
+        content: "";
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        height: 1.2em;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) 50%);
+    }
+}
+
 
 /* FAQ */
 
