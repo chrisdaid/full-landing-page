@@ -20,6 +20,7 @@ Update 7/26/21:
 
 Update 7/28/21: 
 - Added About Us section and centered About Us text in weird box + responsive with a million media queries
+- Added favicon for all browsers and devices
 
 What still needs to be added:
 
