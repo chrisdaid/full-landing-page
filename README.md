@@ -22,6 +22,9 @@ Update 7/28/21:
 - Added About Us section and centered About Us text in weird box + responsive with a million media queries
 - Added favicon for all browsers and devices
 
+Update 7/30/21: 
+- Added contact us form on click in navbar {issues: even if you click on the form, the modal closes & make responsive for mobile}
+
 What still needs to be added:
 
 - Sections with CSS Grid displaying services (DONE)
