@@ -43,7 +43,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    z-index: 9999;
+    z-index: 99;
     border-radius: 8px;
 }
 
@@ -54,7 +54,7 @@ body {
     padding: 20px;
     width: 90px;
     height: 60px;
-    z-index: 999;
+    z-index: 9;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     background-color: rgba(112, 93, 86, 0.75); /* brown variable in rgba */
@@ -317,13 +317,14 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    border: 4px solid rgba(112, 93, 86, 0.75); /* brown variable in rgba */
 }
 
-.absolute {
+.about-text {
     color: white;
     position: absolute;
     text-align: center;
-    top: 340px;
+    bottom: 0;
     max-width: 564px;
     padding: 20px;
 }
@@ -549,6 +550,99 @@ hr {
     background-color: var(--bluegreen);
     border-radius: 10px;
     border: none;
+}
+
+/* Contact Modal  */
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    z-index: 100; /* Overrides the To Top button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 588px;
+    min-height: 350px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px;
+    z-index: 9999;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-nested-container {
+    width: 60%;
+}
+
+.modal-content label {
+    padding: 0px;
+    display: block;
+    width: 75px;
+    font-size: 18px;
+}
+
+.modal-content input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid var(--brown);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#message-field {
+    min-height: 25px;
+    max-height: 200px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border: 2px solid var(--brown);
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal-content .submit-btn {
+    width: 72.25px;
+    height: 60.55px;
+    background: url(assets/send-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    border: none;
+    outline: none;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    border-radius: 0;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    filter: invert(15%) sepia(21%) saturate(10%) hue-rotate(99deg) brightness(99%) contrast(96%);
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
 }
 
 /* Footer */

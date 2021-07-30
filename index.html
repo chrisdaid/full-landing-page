@@ -36,7 +36,7 @@
                         <li><a class="nav-link" href="#services">Services</a></li>
                         <li><a class="nav-link" href="#faq-section">FAQ</a></li>
                         <li><a class="nav-link" href="#about-section">About</a></li>
-                        <li><a class="nav-link" href="#">Contact</a></li>
+                        <li><a class="nav-link" id="open-contact-form" href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -125,7 +125,7 @@
                 <div class="about">
                     <h3>About Us</h3>
                 </div>
-                <div class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, beatae nulla asperiores a adipisci totam, quae dolores enim tempora magnam quis voluptates incidunt in corporis corrupti officiis itaque illum facere.</div>
+                <div class="about-text">This is a full-landing-page for a non-existent IT Services company named CortX. I know, such an edgy name. This project was created in the comfort of my parent's living room and I'm typing this out on the sofa on a Thursday evening. Enjoy the rest of the site :). ~Chris</div>
             </div>
         </section>
 
@@ -152,8 +152,7 @@
                     <details>
                         <summary>Do you sell hardware?</summary>
                         <p>
-                            Yup! We have many items on a rotating stock, our most popular items are Graphics
-                            Cards, as they are widely unavailable all across the globe due to the chip shortage.
+                            Yup! We have many items on a rotating stock, and if you have anything specific in mind, just contact us and our staff will be more than happy to give you a rundown on our stock.
                         </p>
                     </details>
                     <details>
@@ -165,7 +164,32 @@
                 </div>
             </div>
         </section>
-        <!-- Contact Section  -->
+        <!-- Contact Modal  -->
+
+        <div class="bg-modal hidden">
+            <div class="modal-content">
+                <div class="modal-container">
+                    <div class="modal-nested-container">
+                        <!-- Name Input Field + Label -->
+                        <form action="">
+                            <label for="name-field">Name</label>
+                            <input type="text" id="name-field" required>
+                            <!-- Email Input Field + Label -->
+                            <label for="email-field">Email</label>
+                            <input type="email" id="email-field" required>
+                            <!-- Subject Input Field + Label -->
+                            <label for="subject-field">Subject</label>
+                            <input type="text" id="subject-field" required>
+                            <!-- Message Field + Label -->
+                            <label for="message-field">Message</label>
+                            <textarea name="message" id="message-field" required></textarea>
+                            <!-- Submit button  -->
+                            <input type="submit" class="submit-btn" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <footer>

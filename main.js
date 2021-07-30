@@ -45,3 +45,18 @@ summaryArr.forEach(targetSummary => {
         });
     })
 });
+
+// Contact Form
+
+const contactBtn = document.getElementById("open-contact-form");
+const contactModal = document.getElementsByClassName("bg-modal");
+
+// when you click on Contact in navbar it opens the form
+contactBtn.addEventListener("click", () => {
+    contactModal[0].classList.toggle("hidden");
+})
+
+// when empty background is clicked, it closes out the form - BROKEN, if you click inside form it still closees
+contactModal[0].addEventListener("click", () => {
+    contactModal[0].classList.toggle("hidden");
+})
