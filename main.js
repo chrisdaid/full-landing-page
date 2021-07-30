@@ -46,9 +46,9 @@ summaryArr.forEach(targetSummary => {
     })
 });
 
-// Contact Form
-
+// Get Contact Button element
 const contactBtn = document.getElementById("open-contact-form");
+// Get the contact background
 const contactModal = document.getElementsByClassName("bg-modal");
 
 // when you click on Contact in navbar it opens the form
@@ -56,7 +56,11 @@ contactBtn.addEventListener("click", () => {
     contactModal[0].classList.toggle("hidden");
 })
 
-// when empty background is clicked, it closes out the form - BROKEN, if you click inside form it still closees
-contactModal[0].addEventListener("click", () => {
-    contactModal[0].classList.toggle("hidden");
-})
+// when empty background is clicked, it closes out the form 
+window.addEventListener("click", outsideClick)
+
+function outsideClick (e) {
+    if (e.target == contactModal[0]) {
+        contactModal[0].classList.toggle("hidden");
+    }
+}
