@@ -22,10 +22,14 @@ Update 7/28/21:
 - Added About Us section and centered About Us text in weird box + responsive with a million media queries
 - Added favicon for all browsers and devices
 
+Update 7/30/21: 
+- Added contact us form on click in navbar {issues: even if you click on the form, the modal closes & make responsive for mobile}
+- Fixed About Us Paragraph text positioning & made responsive
+
 What still needs to be added:
 
 - Sections with CSS Grid displaying services (DONE)
 - About Us section (Partially DONE)
-- contact form right above footer
+- contact form right above footer -> Update: Changed to popup modal
 - ? possibly a shop section/page with gpus (obviously fake)
 - Footer with nonexistent social medias (DONE)

@@ -78,6 +78,16 @@ body {
     display: flex;
     align-items: center;
     margin: 15px;
+    transition: 0.2s ease;
+}
+
+.header a img:hover {
+    filter: invert(15%) sepia(21%) saturate(10%) hue-rotate(99deg) brightness(99%) contrast(96%);
+    transform: scale(1.05);
+}
+
+.header a img:active {
+    transform: scale(0.95);
 }
 
 .navbar {
@@ -578,7 +588,7 @@ hr {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.6);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100; /* Overrides the To Top button */
     display: flex;
@@ -599,6 +609,11 @@ hr {
 }
 
 @keyframes modalopen {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@-webkit-keyframes modalopen {
     from { opacity: 0 }
     to { opacity: 1 }
 }
@@ -639,7 +654,6 @@ hr {
     min-width: 100%;
     border: 2px solid var(--brown);
     border-radius: 5px;
-    outline: none;
     padding: 3px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -670,6 +684,13 @@ hr {
 
 .hidden {
     display: none;
+    animation-name: modalclose;
+    animation-duration: 1s;
+}
+
+@keyframes modalclose {
+    from { opacity: 0 }
+    to {opacity: 1 }
 }
 
 /* Footer */

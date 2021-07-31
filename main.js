@@ -50,17 +50,30 @@ summaryArr.forEach(targetSummary => {
 const contactBtn = document.getElementById("open-contact-form");
 // Get the contact background
 const contactModal = document.getElementsByClassName("bg-modal");
+// Get name input box
+const nameInput = document.getElementById("name-field")
+// Get all input
+const allInputElements = document.getElementsByTagName("input");
+// Get the textarea element by id
+const contactTextArea = document.getElementById("message-field");
 
-// when you click on Contact in navbar it opens the form
+// when you click on Contact in navbar it opens the form + auto selects name box
 contactBtn.addEventListener("click", () => {
     contactModal[0].classList.toggle("hidden");
+    nameInput.focus();
 })
 
-// when empty background is clicked, it closes out the form 
+// when empty background is clicked, it closes out the form + clears out form
 window.addEventListener("click", outsideClick)
 
 function outsideClick (e) {
     if (e.target == contactModal[0]) {
         contactModal[0].classList.toggle("hidden");
+        for(let i = 0; i < allInputElements.length; i++) {
+            if (allInputElements[i].type === "text" || allInputElements[i].type === "email") {
+                allInputElements[i].value = "";
+            }
+            contactTextArea.value = "";
+        }
     }
 }
