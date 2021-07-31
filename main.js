@@ -66,14 +66,25 @@ contactBtn.addEventListener("click", () => {
 // when empty background is clicked, it closes out the form + clears out form
 window.addEventListener("click", outsideClick)
 
-function outsideClick (e) {
-    if (e.target == contactModal[0]) {
-        contactModal[0].classList.toggle("hidden");
-        for(let i = 0; i < allInputElements.length; i++) {
-            if (allInputElements[i].type === "text" || allInputElements[i].type === "email") {
-                allInputElements[i].value = "";
-            }
-            contactTextArea.value = "";
+const closeModalBtn = document.getElementsByClassName("close-modal-btn")[0];
+
+//function that closes form and clears the form 
+function closeFormAndClearForm() {
+    contactModal[0].classList.toggle("hidden");
+    for(let i = 0; i < allInputElements.length; i++) {
+        if (allInputElements[i].type === "text" || allInputElements[i].type === "email") {
+            allInputElements[i].value = "";
         }
+        contactTextArea.value = "";
+    }
+}
+
+// if the "X" button is clicked, fun closeFormAndClearForm function
+closeModalBtn.addEventListener("click", closeFormAndClearForm);
+
+function outsideClick (e) {
+    if (e.target == contactModal[0]){
+        closeFormAndClearForm();
+        
     }
 }

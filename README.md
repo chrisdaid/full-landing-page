@@ -26,10 +26,18 @@ Update 7/30/21:
 - Added contact us form on click in navbar {issues: even if you click on the form, the modal closes & make responsive for mobile}
 - Fixed About Us Paragraph text positioning & made responsive
 
+Update 7/31/21: 
+- Instant focus on first input element upon opening contact form
+- Clear form upon closing
+- Added slighly scale of 5% increase when hover on main logo and 5% decrease upon click down on logo + added filter to make logo slightly darker to indicate hover
+
+
 What still needs to be added:
 
 - Sections with CSS Grid displaying services (DONE)
-- About Us section (Partially DONE)
-- contact form right above footer -> Update: Changed to popup modal
+- About Us section (DONE)
+- contact form right above footer -> Update: Changed to popup modal (DONE)
+- Close contact form by clicking on the outside of form (DONE)
+- Add close contact form button with a rotated "+" sign 45deg
 - ? possibly a shop section/page with gpus (obviously fake)
 - Footer with nonexistent social medias (DONE)
