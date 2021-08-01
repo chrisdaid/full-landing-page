@@ -79,6 +79,7 @@ function closeFormAndClearForm() {
     }
 }
 
+
 // if the "X" button is clicked, fun closeFormAndClearForm function
 closeModalBtn.addEventListener("click", closeFormAndClearForm);
 
@@ -88,3 +89,5 @@ function outsideClick (e) {
         
     }
 }
+
+
