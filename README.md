@@ -3,7 +3,7 @@ IT Services / Computer Repair landing page
 
 Started around beginning of July 2021. 
 
-Update 7/1-7/18:
+Update 7/1/21-7/18/21:
 - Created boilerplate
 - Added navbar
 - Created main section with background image
