@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/chriwxmb/public_html/Projects/test
+    - export DEPLOYPATH=/home/chriwxmb/public_html/Projects/CortX
     - /bin/cp -R * $DEPLOYPATH
